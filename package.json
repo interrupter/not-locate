@@ -1,0 +1,42 @@
+{
+	"name": "not-locate",
+	"version": "0.0.1",
+	"description": "not-* family module for user location awareness",
+	"main": "index.js",
+	"scripts": {
+		"test": "./node_modules/.bin/mocha --reporter spec",
+		"lint": "./node_modules/.bin/eslint ./src/**/**",
+		"docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+		"cover": "istanbul cover _mocha $(find ./test -name \"*.js\" -not -path \"./node_modules/*\")"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/interrupter/not-locate.git"
+	},
+	"keywords": [
+		"not-framework",
+		"not-node",
+		"location",
+		"geoip"
+	],
+	"author": "interrupter <alex.repin@mail.ru> (http://github.com/interrupter)",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/interrupter/not-locate/issues"
+	},
+	"homepage": "https://github.com/interrupter/not-locate#readme",
+	"dependencies": {
+		"not-config": "*",
+		"not-log": "*",
+		"geoip-lite": "^1.2.1"
+	},
+	"devDependencies": {
+		"chai": "*",
+		"chai-as-promised": "*",
+		"eslint": "*",
+		"ink-docstrap": "^1.3.2",
+		"istanbul": "*",
+		"jsdoc": "^3.5.5",
+		"mocha": "*"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"modules": {
+		"locate": {
+			"list": {
+				"Moscow": {
+					"location": "Москва",
+					"tel": "телефон в Москве"
+				},
+				"Saint Petersburg": {
+					"location": "Санкт-Петербург",
+					"tel": "телефон в Санкт-Петербурге"
+				}
+			},
+			"default": {
+				"location": "Россия",
+				"tel": "телефон в России"
+			}
+		}
+	},
+	"middleware": {
+		"not-locate": {
+			"active": false
+		}
+	}
+}
