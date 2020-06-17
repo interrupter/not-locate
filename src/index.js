@@ -2,7 +2,6 @@ const geoip = require('geoip-lite'),
 	log = require('not-log')(module),
 	config = require('not-config').readerForModule('locate');
 
-
 /**
 * Detect location and set res.locals accordingly
 * @param {ExpressRequest} req
@@ -50,7 +49,7 @@ let passiveMiddleware = (req, res, next)=>{
 /**
 * Return locate middleware
 * @param {object} options middleware options from config:middleware:not-locate
-* @return {function} active or passive version of middleware 
+* @return {function} active or passive version of middleware
 */
 exports.getMiddleware = (options)=>{
 	if (options.active === false){
